@@ -1,0 +1,344 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+}
+
+.logo {
+    height: 60px;
+    margin: 10px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar li {
+    color: white;
+    list-style: none;
+    padding: 15px;
+    font-family: cursive;
+    font-size: small;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+.burger{
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+.burger div{
+    margin: 3px;
+    height: 3px;
+    width: 35px;
+    background-color: white;
+}
+
+.burger div {
+    fill: orangered;
+}
+
+.apply {
+    height: 40px;
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 50px;
+    border: none;
+    font-family: cursive;
+    border-radius: 30px;
+}
+
+.apply:hover {
+    background-color: rgb(224,224,224);
+    color: white;
+    border: 3px solid white;
+}
+
+.monkey {
+    height: 150px;
+    transform: translate(20px, -140px);
+    animation-name: monkey;
+    animation-duration: 2s;
+}
+
+@keyframes monkey {
+    0% {
+        transform: translate(-200px, -500px) rotate(-180deg);
+    }
+
+    100% {
+        transform: translate(20px, -140px)
+    }
+}
+
+.flowerpot {
+    height: 200px;
+    transform: translate(830px, -100px);
+    animation-name: flowerpot;
+    animation-duration: 2s;
+}
+
+@keyframes flowerpot {
+    0% {
+        transform: translate(1000px, -500px) rotate(120deg);
+    }
+
+    100% {
+        transform: translate(830px, -100px)
+    }
+}
+
+.tablet {
+    height: 250px;
+    transform: translate(600px, 300px);
+    animation-name: tablet;
+    animation-duration: 2s;
+}
+
+@keyframes tablet {
+    0% {
+        transform: translate(1200px, 700px) rotate(-120deg);
+
+    }
+
+    100% {
+        transform: translate(600px, 300px)
+    }
+}
+
+.papers {
+    height: 300px;
+    width: 300px;
+    transform: translate(-900px, 350px);
+    animation-name: papers;
+    animation-duration: 2s;
+}
+
+@keyframes papers {
+    0% {
+        transform: translate(-1300px, 800px) rotate(-120deg);
+    }
+
+    100% {
+        transform: translate(-900px, 350px)
+    }
+}
+
+.pen {
+    height: 120px;
+    transform: translate(970px, 10px);
+    animation-name: pen;
+    animation-duration: 2s;
+}
+
+
+@keyframes pen {
+    0% {
+        transform: translate(1500px, 100px) rotate(120deg);
+    }
+
+    100% {
+        transform: translate(970px, 10px)
+    }
+}
+
+.clip {
+    transform: translate(-580px, 60px) rotate(-45deg);
+    animation-name: clip;
+    animation-duration: 2s;
+}
+
+@keyframes clip {
+    0% {
+        transform: translate(-900px, 200px) rotate(120deg);
+    }
+
+    100% {
+        transform: translate(-580px, 60px) rotate(-45deg)
+    }
+}
+
+.clip1 {
+    transform: translate(-580px, 100px);
+    animation-name: clip1;
+    animation-duration: 2s;
+}
+
+@keyframes clip1 {
+    0% {
+        transform: translate(-900px,500px) rotate(120deg);
+    }
+    100%{
+        transform: translate(-580px, 100px);
+    }
+}
+
+.edd {
+    height: 80px;
+    transform: translate(140px, 80px);
+    animation-name: edd;
+    animation-duration: 2s;
+}
+
+@keyframes edd {
+    0% {
+        transform: translate(-200px,200px) rotate(-120deg);
+    }
+
+    100% {
+        transform: translate(140px, 80px);
+    }
+}
+
+.header {
+    height: 100px;
+    transform: translate(-1080px, 120px);
+    animation-name: header;
+    animation-duration: 2s;
+}
+
+@keyframes header {
+    0% {
+        transform: translate(-2000px, 400px) rotate(120deg);
+    }
+    100% {
+        transform: translate(-1080px, 120px);
+    }
+}
+
+.text {
+    position: relative;
+    /* border: 1px solid white; */
+    height: 300px;
+    width: 300px;
+    transform: translate(600px,-350px);
+}
+
+.design {
+    opacity: 0;
+    color: white;
+    transform: translate(40px, 50px);
+    font-size: 50px;
+    font-family: cursive;
+    position: absolute;
+    animation-name: design;
+    animation-duration: 1.5s;
+}
+
+@keyframes design {
+    0% {
+        font-size: 75px;
+        transform: translate(39px, -10px);
+        opacity: 1;
+    }
+
+    100% {
+    transform: translate(40px, 50px);
+    font-size: 50px;
+    opacity: 1;
+    }
+}
+
+.build {
+    color: white;
+    transform: translate(40px, 50px);
+    font-size: 50px;
+    font-family: cursive;
+    text-transform: capitalize;
+    position: absolute;
+    animation-name: build;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+@keyframes build {
+    0% {
+        font-size: 75px;
+        transform: translate(39px, -10px);
+        opacity: 1;
+    }
+
+    100% {
+    transform: translate(40px, 50px);
+    font-size: 50px;
+    opacity: 1;
+    }
+}
+
+.launch {
+    color: white;
+    transform: translate(40px, 50px);
+    font-size: 50px;
+    font-family: cursive;
+    position: absolute;
+    animation-name: launch;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes launch {
+    0% {
+        font-size: 75px;
+        transform: translate(39px, -10px);
+        opacity: 1;
+    }
+
+    100% {
+    transform: translate(40px, 50px);
+    font-size: 50px;
+    opacity: 1;
+    }
+}
+
+.text1 {
+    color: white;
+    font-family: cursive;
+    text-transform: capitalize;
+    transform: translate(70px, 130px);
+    font-size: 10px;
+}
+
+.start {
+    transform: translate(55px, 160px);
+    width: 120px;
+    height: 35px;
+    font-family: cursive;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.start:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+@keyframes launch {
+    0% {
+        transform: translate(39px, -10px);
+        font-size: 75px;
+    }
+
+    100% {
+    transform: translate(40px, 50px);
+    font-size: 50px;
+    opacity: 1;
+    }
+}
+
+
