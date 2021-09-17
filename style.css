@@ -32,17 +32,12 @@ body {
     margin-left: 30px;
 }
 
-.burger{
-    margin-top: 40px;
-    margin-left: 30px;
-    margin-right: 50px;
-}
-
-.burger div{
+#burger div{
     margin: 3px;
     height: 3px;
     width: 35px;
     background-color: white;
+    transform: translate(850px, 60px);
 }
 
 .burger div {
@@ -57,6 +52,7 @@ body {
     border: none;
     font-family: cursive;
     border-radius: 30px;
+    transform: translate(580px, 20px);
 }
 
 .apply:hover {
@@ -341,4 +337,24 @@ body {
     }
 }
 
+#sidebar {
+    display: flex;
+    position: absolute;
+    right: 0;
+    background-color: grey;
+    top: 0;
+    flex-direction: column;
+    z-index: 5;
+    height: 100vh;
+    width: 0px;
+    transition: 2s;
+}
+
+#close {
+    background-color: grey;
+    font-size: 25px;
+    color: white;
+    border: none;
+    transform: translate(60px,10px);
+}
 
